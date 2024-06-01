@@ -1,0 +1,83 @@
+
+#navBar {
+    width: 90%;
+    margin: 0 auto;
+    
+}
+
+#beerBar{
+    font-weight: 400;
+    font-size: 25px;
+    
+}
+.nav-link{
+    font-size:larger;
+    font-weight: 400;
+}
+
+.nav-link:hover{
+   cursor: pointer;
+}
+#main-page{
+    width: 90%;
+    margin: 120px auto 10px auto ;
+    background-color: rgb(234, 234, 234);
+    padding-bottom: 5rem;
+}
+
+#text{
+    margin: auto 5%;
+}
+
+#mainimg{
+    width: 90%;
+}
+
+#beers{
+    margin-top: 60px;
+}
+
+.d-flex{
+    margin: 0 5% 50px 5%;
+    
+}
+.dropdown {
+    width: 90%;
+    position: relative;
+    display: flex; 
+    justify-content: center; 
+}
+
+.dropdown-menu {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+#beersPerPagebtn {
+    margin-right: 40px; 
+}
+
+#sortbtn {
+    margin-left: 40px; 
+}
+
+
+
+.card-text {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+}
+  
+#beerPage{
+    margin-left: 10%;
+    font-size: large;
+}
+
+#beerInfo{
+    padding: 30px 0px 30px 0px;
+    width: 90%;
+}

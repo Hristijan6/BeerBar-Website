@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="x-icon" href="images/beer-icon.png">
+    <title>Beer Bar</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navBar" class="fixed-top">
+        <nav class="navbar navbar-expand-lg bg-light">
+            <h3 class="navbar" id="beerBar" >Beer Bar</h3>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <h3 class="nav-link" id="beerS">Beers</h3>
+                    </li>
+                    <li class="nav-item ">
+                        <h3 class="nav-link text-secondary" id="randomBeer">Random Beer</h3>
+                    </li>
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search" id="inputText">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit" id="submitBtn">Search</button>
+                </form>
+            </div>
+        </nav>
+    </div>
+
+    <div id="main-page" class="text-center">
+        <div id="text" class="text-left">
+            <br><br>
+            <h1 class="font-weight-light">Hello, this is beer world!</h1>
+            <p class="text-secondary">This is a simple beer page, you can get all the information for beers here.</p>
+            <hr>
+        </div>
+
+        <img id="mainimg" src="images/beerBanner.jpg" alt="mainBeerScreen">
+    </div>
+    
+    <div id="beers">
+        
+        <div class="d-flex justify-content-center align-items-center bg-light">
+            <div class="dropdown mr-3">
+                <button class="btn btn-danger dropdown-toggle" type="button" id="beersPerPagebtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Beers per page
+                </button>
+                <div class="dropdown-menu" aria-labelledby="beersPerPagebtn">
+                    <a class="dropdown-item" id="5">show 5</a>
+                    <a class="dropdown-item" id="10">show 10</a>
+                    <a class="dropdown-item" id="20">show 20</a>
+                </div>
+            </div>
+            
+            <div class="dropdown">
+                <button class="btn btn-danger dropdown-toggle" type="button" id="sortbtn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Sort by
+                </button>
+                <div class="dropdown-menu" aria-labelledby="sortbtn">
+                    <a class="dropdown-item" id="nameASC">Name ASC</a>
+                    <a class="dropdown-item" id="nameDESC">Name DESC</a>
+                    <a class="dropdown-item" id="alcoholASC">Alcohol % ASC</a>
+                    <a class="dropdown-item" id="alcoholDESC">Alcohol % DESC</a>
+                    <a class="dropdown-item" id="bitternessASC">Bitterness ASC</a>
+                    <a class="dropdown-item" id="bitternessDESC">Bitterness DESC</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div id="beerPage"></div>
+        
+        <br>
+
+        <br>
+        
+        <div id="beerContainer" class="row justify-content-center"  >
+            <div id="beersDisplayed" >
+            </div>
+            <div></div>
+        </div>
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div id="nextAndPrevButtons" class="btn-group">
+                    <button type="button" class="btn btn-outline-primary" id="previous">Previous</button>
+                    <button type="button" class="btn btn-outline-primary" id="next">Next</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    
+    
+    <div id="beerInfo" class="d-flex justify-content-center align-items-center bg-light">
+        <div id="randomBeerImg"></div>
+        <div id="randomBeerInfo"></div>
+        
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+</html>
